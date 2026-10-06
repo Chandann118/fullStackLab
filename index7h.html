@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User-defined Object Example</title>
+<script>
+function Person(name, age) {
+ this.name = name;
+ this.age = age;
+ this.display = function() {
+ return "Name: " + this.name + ", Age: " + this.age;
+ }
+}
+function showPerson() {
+ var p1 = new Person("John", 25);
+ document.write(p1.display());
+}
+</script>
+</head>
+<body onload="showPerson()">
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Pseudo and Attribute Selectors</title>
+ <style>
+ a:hover { color: red; }
+ p:first-child { font-weight: bold; }
+ p::first-letter { font-size: 24px; color: blue; }
+ p::after { content: " [END]"; color: gray; }
+ input[type="text"] {
+ border: 2px solid green;
+ padding: 5px;
+ }
+ </style>
+</head>
+<body>
+ <p>This is the first paragraph (first-child, first-letter).</p>
+ <p>Second paragraph example.</p>
+ <a href="#">Hover over this link</a><br><br>
+ Name: <input type="text" placeholder="Enter your name">
+</body>
+</html>
